@@ -91,8 +91,8 @@ const specialChar = [
               return;
           }
           //Maximum character length for password
-          if(length > 15){
-              alert("Password length must be less than 16 characters");
+          if(length > 128){
+              alert("Password length must be less than 129 characters");
           }
           //if Not a Number methis is true, user must provide correct length for password
           if(isNaN(length) == true){
@@ -131,6 +131,7 @@ const specialChar = [
 
           //this holds the generated password
           const password = []
+          console.log(generatePassword);
 
           //array to store types of characters to include in password
           const possibleChar = [];
