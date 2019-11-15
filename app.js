@@ -80,6 +80,7 @@ const specialChar = [
         "Y",
         "Z"
       ];
+
       //This function is to prompt user for password options.
       function getPasswordChoices(){
           
@@ -88,22 +89,27 @@ const specialChar = [
           if(length < 8){
               alert("Password should be at least 8 characters");
               return;
-          } 
+          }
+          //Maximum character length for password
           if(length > 15){
               alert("Password length must be less than 16 characters");
           }
+          //if Not a Number methis is true, user must provide correct length for password
           if(isNaN(length) == true){
-              alert("You should provide length for password");
+              alert("You should provide correct length for password");
           }
+          //Confirming that the password includes one of each characters required
           const hasSpecialChar = confirm("Click ok to confirm incuding special characters");
           console.log("hasSpecialCharacter: "+hasSpecialChar);
           const hasNumericChar = confirm(" Click ok to confirm incuding numeric characters");
           const hasLowerCaseChar = confirm(" Click ok to confirm incuding lower case characters");
           const hasUpperCaseChar = confirm(" Click ok to confirm incuding upper case characters");
+          //if each value is false, alert must prompt user to select at least one character type
           if(hasSpecialChar === false && hasNumericChar === false && hasLowerCaseChar === false && hasUpperCaseChar ===false){
               alert("You must select at least one character type");
           }
-          var userOptions = {
+          //value of each userOption
+          const userOptions = {
               length: length,
               hasLowerCaseChar: hasLowerCaseChar,
               hasUpperCaseChar: hasUpperCaseChar,
@@ -111,21 +117,24 @@ const specialChar = [
               hasSpecialChar: hasSpecialChar,
           }
           return userOptions;
-      }
+      } 
+      //function method to randomize from the provided arrays
       function getRandom(arrayToUse){
           const indexValue = Math.floor(Math.random * arrayToUse.length);
           const randomChar = arrayToUse[indexValue];
           return randomChar;
       }
-
+        //function method to generate password from password values
       function generatePassword(){
           const options = getPasswordChoices();
           console.log(options);
+
           //this holds the generated password
           const password = []
-          // array to store types of characters to include in password
+
+          //array to store types of characters to include in password
           const possibleChar = [];
-          const guaranteedCharr = [];
+          const guaranteedChar = [];
 
           if(options.hasSpecialChar){
               possibleChar = possibleChar.concat(specialChar);
