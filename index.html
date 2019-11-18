@@ -28,37 +28,44 @@
     <hr class="my-1">
 
     <div container>
-        <div class="form-group">
-            <label for="exampleFormControlTextarea1"></label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Your Secure Password</textarea>
+        <div row="justify-content-lg-center">
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1"></label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Your Secure Password</textarea>
+            </div>
         </div>
     </div>
 
+    <p>Character Set:</p>
+    <div>
+        <p>Length:
+            <input id="length">
+        </p>
+    </div>
+    <div>
+        <input id="specChar" type="checkbox"/> Use Special Characters ( !@#$%^&* )
+    </div>
+    <div>
+        <input id="numericChar" type="checkbox"/> Use Numerical Characters ( 1234567890 )
+    </div>
+    <div>
+        <input id="lwChar" type="checkbox"/> Use Lowercase Characters
+    </div>
+    <div>
+        <input id="upChar" type="checkbox"/> Use Uppercase Characters
+    </div>
 
-    <div>
-        <input id="specChar" type="checkbox" /> Use Special Characters ( !@#$%^&* )
-    </div>
-    <div>
-        <input id="numericChar" type="checkbox" /> Use Numerical Characters ( 1234567890 )
-    </div>
-    <div>
-        <input id="upChar" type="checkbox" /> Use Lowercase Characters
-    </div>
-    <div>
-        <input id="specChar" type="checkbox" /> Use Uppercase Characters
-    </div>
 
     <hr class="my-3">
 
     <div class="button">
         <div class="row justify-content-md-center">
-            <button type="button" class="btn btn-primary btn-lg" onclick="getPasswordChoices()">Generate
-                Password</button>
+            <button onclick="getPasswordChoices()">Generate Password</button>
         </div>
     </div>
     </div>
 
-    <script src="app.js"></script>
+    <script src="app2.js"></script>
 
 
 </body>
