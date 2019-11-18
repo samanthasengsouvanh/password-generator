@@ -16,34 +16,46 @@
     <nav class="navbar navbar-light bg-light justify-content-md-center">
         <span class="navbar-brand mb-0 h1">Password Generator</span>
     </nav>
-    
-    <div class="container">
-        <div class="row justify-content-md-left">
+
+    <div>
+        <div class="row">
             <div class="col">
-                <h3 class="text-left">Generate a Password</h3>
+                <h3>Generate a Password</h3>
             </div>
         </div>
+    </div>
 
-        <hr class="my-1">
+    <hr class="my-1">
 
-        <form>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1"></label>
-                    <textarea class="form-control"
-                    id="exampleFormControlTextarea1" rows="6"
-                        placeholder="Your Secure Password">
-                </textarea>
-                </div>
-        </form>
-
-
-        <hr class="my-3">
-
-        <div class="button">
-            <div class="row justify-content-md-center">
-                <button type="button" class="btn btn-primary btn-lg" onclick="getPasswordChoices()">Generate Password</button>
-            </div>
+    <div container>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1"></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Your Secure Password</textarea>
         </div>
+    </div>
+
+
+    <div>
+        <input id="specChar" type="checkbox" /> Use Special Characters ( !@#$%^&* )
+    </div>
+    <div>
+        <input id="numericChar" type="checkbox" /> Use Numerical Characters ( 1234567890 )
+    </div>
+    <div>
+        <input id="upChar" type="checkbox" /> Use Lowercase Characters
+    </div>
+    <div>
+        <input id="specChar" type="checkbox" /> Use Uppercase Characters
+    </div>
+
+    <hr class="my-3">
+
+    <div class="button">
+        <div class="row justify-content-md-center">
+            <button type="button" class="btn btn-primary btn-lg" onclick="getPasswordChoices()">Generate
+                Password</button>
+        </div>
+    </div>
     </div>
 
     <script src="app.js"></script>
