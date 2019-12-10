@@ -93,6 +93,8 @@ function getPasswordChoices() {
 
 }
 }
+
+//copy function from https://www.w3schools.com/howto/howto_js_copy_clipboard.asp
 function copyPassword() {
 const copiedPassword = document.getElementById("Password");
 copiedPassword.select();

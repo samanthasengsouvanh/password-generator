@@ -1,6 +1,8 @@
 # password-generator
 Password Generator
 
+Deployed Link: https://samanthasengsouvanh.github.io/password-generator/
+
 My motivation to create this project was the importance of my own data security. I wanted to provide a way for users to create secure passwords to prevent the vulnerability of a security breach. By using the password generator, it resolves the issue of creating "easy" to decipher passwords. In creating this project, I learned the more intricate password you have, the more secure your data will be.
 
 Getting Started
