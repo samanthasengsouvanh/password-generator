@@ -31,7 +31,7 @@
         <div row="justify-content-lg-center">
             <div class="form-group">
                 <label for="exampleFormControlTextarea1"></label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Your Secure Password</textarea>
+                <textarea class="form-control" id="Password" rows="3">Your Secure Password</textarea>
             </div>
         </div>
     </div>
@@ -39,21 +39,21 @@
     <p>Character Set:</p>
     <div>
         <p>Length:
-            <input id="length">
+            <input type="number" id="length">
         </p>
     </div>
 
     <div>
-        <input id="specChar" type="checkbox"/> Use Special Characters ( !@#$%^&* )
+        <input id="specChar" type="checkbox" /> Use Special Characters ( !@#$%^&* )
     </div>
     <div>
-        <input id="numericChar" type="checkbox"/> Use Numerical Characters ( 1234567890 )
+        <input id="numericChar" type="checkbox" /> Use Numerical Characters ( 1234567890 )
     </div>
     <div>
-        <input id="lwChar" type="checkbox"/> Use Lowercase Characters
+        <input id="lwChar" type="checkbox" /> Use Lowercase Characters
     </div>
     <div>
-        <input id="upChar" type="checkbox"/> Use Uppercase Characters
+        <input id="upChar" type="checkbox" /> Use Uppercase Characters
     </div>
 
     <hr class="my-3">
@@ -61,6 +61,12 @@
     <div class="button">
         <div class="row justify-content-md-center">
             <button onclick="getPasswordChoices()">Generate Password</button>
+        </div>
+    </div>
+    <br>
+    <div class="button">
+        <div class="row justify-content-md-center">
+            <button onclick="copyPassword()">Copy password</button>
         </div>
     </div>
     </div>
