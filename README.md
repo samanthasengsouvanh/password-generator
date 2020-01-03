@@ -10,6 +10,9 @@ Getting Started
 The application should validate user input and ensure that at least one character type is selected.
 Once all prompts are answered, the user will be presented with a password matching the answered prompts.
 
+Screenshots
+![UI SCREENSHOT](./Assets/screenshot.png)
+
 Authors
 
 Samantha Sengsouvanh - Initial work 
