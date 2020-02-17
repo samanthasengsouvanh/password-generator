@@ -1,9 +1,4 @@
-# password-generator
-Password Generator
-
-## Deployed Link
-
-https://samanthasengsouvanh.github.io/password-generator/
+# Password Generator
 
 ## User Story
 
@@ -17,6 +12,11 @@ Once all prompts are answered, the user will be presented with a password matchi
 ## Screenshots
 
 ![UI SCREENSHOT](./Assets/screenshot.png)
+
+## Deployed Link
+
+https://samanthasengsouvanh.github.io/password-generator/
+
 
 ## Authors
 
